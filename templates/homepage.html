@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/HTML/togglebutton.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+<script src="/tryle/4.js"></script>
+<!-- <script src="/HTML/togllebutton.js"></script> -->
+
+<script>
+    var modal = document.getElementById('signupform');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+   </script>
+<style>
+
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+/* header starts from here*/
+
+header
+{
+    background-color: rgb(234 234 234 / 52%);
+    /* border: 2px solid black; */
+    /* height: 130px; */
+    /* position: sticky;
+    top: 0px; */
+}
+#navbar
+{
+    padding: 10px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+#logo
+{
+    /* border: 2px solid red; */
+    display: inline-block;
+    margin: 0px 0px 0px 5px;
+}
+#logo img
+{
+    border: 2px solid brown;
+    height: 70px;
+}
+.container
+{
+    display: inline-block;
+    /* position: absolute; */
+    /* top: 50px;
+    left: 100px; */
+    margin: 0px 0px 0px 25px;
+}
+.container ul
+{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.container ul a
+{
+    font-family: "Open Sans", Helvetica, Arial, "Liberation Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid transparent;
+    /* border: 1.5px solid black; */
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    margin: 0px 22px;
+}
+.container ul a:hover
+{
+    border: 1px solid black;
+}
+#mainsearch
+{
+    font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+    /* text-align: center; */
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    padding: 0px 0px 0px 10px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    margin: 0px 20px;
+    /* position: absolute; */
+    /* top: 32px; */
+    /* right: 350px; */
+    height: 40px;
+    width: 130px;
+}
+#signupandlogin
+{
+    /* border: 2px solid blue; */
+    display: inline-block;
+    /* position: absolute; */
+    /* top: 22px; */
+    /* right: 12px; */
+}
+.btn
+{
+    /* color: black; */
+    /* letter-spacing: 1px; */
+    /* border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    /* font-family: 'Anton', sans-serif; */
+    /* font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 800;
+    cursor: pointer; */
+    
+    color: yellow;
+    border: 1px solid transparent;
+    background-color: green;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 8px 8px;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.btn:hover
+{
+    background-color: black;
+    color: yellow;
+}
+
+#signupandlogin a
+{
+    text-decoration: none;
+    /* border: 2px solid tomato; */
+}
+#freelancer
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 140, 74);
+    font-size: 18px;
+}
+#catagories
+{   
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background-color: white;
+    /* border: 2px  solid darkgreen; */
+    /* margin: 50px auto; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#catagories ul
+{
+    /* border: 2px solid aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.cat
+{
+    /* border: 2px solid royalblue; */
+    padding: 0px 33px;
+}
+.cat a
+{
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(97, 94, 94);
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0px;
+    border: 3px solid transparent;
+    /* border-radius: 5px; */
+}
+.cat a:hover
+{
+    color: black;
+    /* text-decoration: underline; */
+    border-bottom: 3px solid black;
+    /* background-color: black; */
+}
+/* body starts from here */
+
+#centerheading
+{
+    font-family: 'Goblin One', cursive;
+    font-size: 25px;
+    margin: 15px 0px 0px 20px;
+}
+
+#mid
+{
+    background-color: rgb(234 234 234 / 52%);
+    /* margin: 30px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+}
+#centerimage
+{
+    height: 375px;
+    /* height: 95%; */
+    opacity: 0.7;
+    border-radius: 10px;
+}
+.centerbox
+{
+    margin:  40px 20px;
+    /* height: 400px; */
+    width: 500px;
+    /* border: 2px solid red; */
+    text-align: center;
+}
+.centerbox h1
+{
+    color: rgb(13, 0, 128);
+    font-size: 45px;
+    margin: 15px 0px;
+    padding: 40px 5px;
+    font-family: 'Goblin One', cursive;
+}
+.centerbox p
+{
+    color: rgb(212, 56, 56);
+    font-family: Nunito, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 5px 5px;
+}
+#mid2
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+    /* height: 80vh; */
+    width: 100vw;
+    margin: 30px auto;
+}
+.mid2box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height:500px; */
+    width: 600px;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    /* border: 2px solid red; */
+}
+
+.mid2box h1
+{
+    font-family: 'Goblin One', cursive;
+    font-weight: lighter;
+    font-size: 35px;
+    /* letter-spacing: 1px; */
+    color: rgb(13, 0, 128);
+    margin: 15px 0px;
+    padding: 20px 5px;
+}
+.mid2box p
+{
+    padding: 10px 60px;
+    font-size: 22px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.btn2
+{
+    height: 60px;
+    width: 250px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(245, 131, 10);
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: 30px 0px 0px 10px;
+    cursor: pointer;
+}
+.mid2box img
+{
+    height: 370px;
+    /* width: 100%; */
+    /* opacity: .75; */
+    border-radius: 20px;
+}
+#belowmid
+{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid green;
+}
+.endbox
+{
+    margin: 10px;
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+#mid3
+{
+    /* border: 2px solid black; */
+    /* height: 90vh; */
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+.mid3box
+{
+    /* border: 2px solid red; */
+    width:600px;
+    /* height: 600px; */
+    /* padding: 10px 10px; */
+}
+#mid3box1
+{
+    color: white;
+    background-color: #1c0b41;
+    border: 1px solid transparent;
+    border-radius: 20px 0px 0px 20px;
+}
+#mid3box2
+{
+}
+.mid3box1content
+{
+    padding: 50px 50px;
+}
+.mid3box h3
+{
+    font-family: 'Carter One', cursive;
+    margin: 10px 4px;
+    font-size: 20px;
+}
+.mid3box h2
+{
+    font-family: 'Carter One', cursive;
+    margin: 30px 5px;
+    font-size: 39px;
+}
+.mid3box p
+{
+    font-family: 'Carter One', cursive;
+    margin: 25px 5px;
+    font-size: 16px;
+}
+.mid3box button
+{
+    height: 60px;
+    width: 250px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1c0b41;
+    background-color: white;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: 20px 0px 0px 10px;
+    cursor: pointer;
+}
+.mid3box img
+{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid transparent; */
+    border-radius: 0px 20px 20px 0px;
+}
+/* footer */
+
+footer
+{
+    color: white;
+    font-family: 'Paytone One', sans-serif;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* height: 100vh; */
+    /* width: 100%; */
+    background-color: rgb(75, 75, 75);
+}
+.footerbox
+{
+    box-sizing: border-box;
+    padding: 0px 30px;
+    height: 300px;
+    width: 210px;
+    /* border: 2px solid red; */
+    /* background-color: aliceblue; */
+    margin: 20px;
+}
+.footerbox h2
+{
+    margin: 25px 0px;
+}
+.footerbox ul
+{
+    list-style: none;
+}
+.footerbox li
+{
+    margin: 20px 0px;
+}
+.footerbox a
+{
+    font-size: 16px;
+    font-weight: lighter;
+    color: rgb(231, 231, 231);
+    text-decoration: none;
+}
+.footerbox a:hover
+{
+    border-bottom: 1px solid white;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 0% auto 0% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid transparent;
+    width: 50%; /* Could be more or less, depending on screen size */
+
+    /* padding: 3rem; */
+    width: 30%;
+    padding: 38px;
+    border-radius: 15px;
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+/* sign up form */
+
+.signup-form {
+
+}
+
+h2 {
+    font-size: 36px;
+    letter-spacing: 0.08em
+}
+
+.signup-form .form-control {
+    font-size: 16px;
+    padding: 10px 15px;
+    color: #555;
+    background-color: #fff;
+    border-radius: 3px
+}
+
+.signup-form input {
+    border: 1px solid black;
+    height: 38px;
+    width: 23vw;
+    box-shadow: none !important;
+    margin: 10px;
+}
+
+.btn-blue {
+    display: block;
+    margin: 15px auto 0px auto;
+    background: #44c5ee;
+    padding: 10px 28px;
+    border: 2px solid #44c5ee;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    box-shadow: 0px 0px 10px 0px rgba(68, 197, 238, 0.6);
+    outline: none !important
+}
+
+
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active {
+    background: #fff;
+    color: #496174;
+    cursor: pointer;
+}
+
+.btn-red {
+    display: block;
+    margin: 15px auto 0px auto;
+    background: red;
+    padding: 10px 28px;
+    border: 2px solid red;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    box-shadow: 0px 0px 10px 0px red;
+    outline: none !important
+}
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active
+{
+    color: red;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* toggle button */
+
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .closebtn
+  {
+      color: white;
+      position: absolute;
+    top: 15px;
+    left: 25px;
+    font-size: 36px;
+    cursor: pointer;
+  }
+  .closebtn:hover
+  {
+      color: red;
+      font-size: 40px;
+  }
+  .sidepanel a {
+    font-family: "Open Sans", Helvetica, Arial, "Liberation Sans", sans-serif;
+      text-align:center;
+    margin: 5px 5px;
+    padding: 30px 0px 30px 0px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    border: 1px solid white;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+    /* border-bottom: 1px solid white; */
+    text-decoration: underline;
+  }
+  
+  .sidepanel {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    font-size: 36px;
+  }
+  
+.openbtn {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 3%;
+    right: 10%;
+  }
+  
+  .openbtn:hover {
+    background-color:#444;
+  }
+
+/* media query */
+@media screen and (max-width: 1000px)
+{
+    .navright,.container li
+    {
+        display: none;
+    }
+    .openbtn
+    {
+        display: block;
+    }
+    .modal-content
+    {
+        width: 60vw;
+    }
+    .signup-form input
+    {
+        width: 80%;
+    }
+}
+</style>
+
+</head>
+
+<body>
+    <header>
+        <!-- toggle bar -->
+        <div id="mySidepanel" class="sidepanel">
+            <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</div>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Log In</a>
+            <a href="#">Sign Up</a>
+            <a href="#">Freelancer?</a>
+          </div>
+          <button class="openbtn" onclick="openNav()">☰</button> 
+
+          <!-- navbar -->
+          <div id="navbar">
+          
+            <div class="container navleft">
+            
+                <ul>
+                    
+                        <span id="logo">
+              <img src="/Images/logo.jpg" alt="">
+            </span>
+                    
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="navright">
+                <input type="text" placeholder="&#128269 search" id="mainsearch">
+                <div id="signupandlogin">
+                    <button class="btn" onclick="document.getElementById('loginform').style.display='block'">Log In</button>
+                    <button class="btn" onclick="document.getElementById('signupform').style.display='block'">Sign Up</button>
+                    <a href="#" id="freelancer">Freelancer?</a>
+                </div>
+            </div>
+        </div>
+        <div id="catagories">
+            <ul>
+                <li class="cat"><a href="#">catagory1</a></li>
+                <li class="cat"><a href="#">catagory2</a></li>
+                <li class="cat"><a href="#">catagory3</a></li>
+                <li class="cat"><a href="#">catagory4</a></li>
+                <li class="cat"><a href="#">catagory5</a></li>
+                <li class="cat"><a href="#">catagory6</a></li>
+                <li class="cat"><a href="#">catagory7</a></li>
+                <li class="cat"><a href="#">catagory8</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- signup form -->
+            <div id="signupform" class="modal">
+  
+                <form class="modal-content animate signup-form" action="/action_page.php" method="post">
+                    <span onclick="document.getElementById('signupform').style.display='none'" class="close" title="Close">&times;</span>
+                    <h2 class="text-center">SIGNUP NOW</h2>
+                    <hr>
+                    <div class="form-group"> <input type="text" class="form-control" placeholder="Full Name" required="required"> </div>
+                    <div class="form-group"> <input type="email" class="form-control" placeholder="Email Address" required="required"> </div>
+                    <div class="form-group"> <input type="text" class="form-control" placeholder="User Name" required="required"> </div>
+                    <div class="form-group"> <input type="text" class="form-control" placeholder="Password" required="required"> </div>
+                    <div class="form-group text-center"> <button type="submit" class="btn3 btn-blue btn-block">Start Now</button> </div>
+                </form>
+              </div>
+              <!-- login form -->
+              <div id="loginform" class="modal">
+  
+                <form class="modal-content animate signup-form" action="/action_page.php" method="post">
+                    <span onclick="document.getElementById('loginform').style.display='none'" class="close" title="Close">&times;</span>
+                    <h2 class="text-center">LOG IN</h2>
+                    <hr>
+                    <div class="form-group"> <input type="text" class="form-control" placeholder="User Name" required="required"> </div>
+                    <div class="form-group"> <input type="text" class="form-control" placeholder="Password" required="required"> </div>
+                    <div class="form-group text-center"> <button type="submit" class="btn3 btn-red btn-block">Log In</button> </div>
+                </form>
+              </div>
+    <!-- <hr> -->
+    <section id="mid">
+        <div class="centerbox" >
+            <img src="/Images/1.jpg" alt="" id="centerimage">
+        </div>
+        <div class="centerbox">
+            <h1>Make bright ideas happen.</h1>
+            <p>Find the best freelancers to deliver your projects</p>
+        </div>
+    </section>
+    <hr>
+    <section id="mid2">
+        <div class="mid2box">
+            <h1>Getting work done has never been easier</h1>
+            <div class="pinsidemid2box">
+                <p>Get matched with expert freelancers in minutes</p>
+                <p>Dedicated 24/7 customer service team</p>
+                <p>Money back guarantee and anti-fraud protection</p>
+            </div>
+            <button class="btn2" onclick="document.getElementById('signupform').style.display='block'">START NOW FOR FREE</button>
+        </div>
+        <div class="mid2box">
+            <img src="/Images/4.jpg" alt="">
+        </div>
+    <!-- <section>
+    <h1 id="centerheading">Most popular catagories</h1>
+    <section id="belowmid">
+        <div class="endbox">1</div>
+        <div class="endbox">2</div>
+        <div class="endbox">3</div>
+        <div class="endbox">4</div>
+        <div class="endbox">5</div>
+    </section> -->
+    <hr>
+    <div id="mid3">
+        <div class="mid3box" id="mid3box1">
+            <div class="mid3box1content">
+                <h3>Freelancers</h3>
+            <h2>
+                Embrace the freelance revolution
+            </h2>
+            <p>
+                There's never been a better time to take yourself online and start making money from your very own fine-tuned set of skills.
+            </p>
+            <p>
+                Work wherever suits you, choose full-time, part-time or flexi-time. On PeoplePerHour you remain in control of everything — including your price.
+            </p>
+            <button class="btn4">
+                JOIN AS A FREELANCER
+            </button>
+            </div>
+        </div>
+        <div class="mid3box" id="mid3box2">
+            <img src="/Images/5.jpg" alt="">
+        </div>
+    </div>
+    <footer>
+        <!-- <div id="logo2">
+            <img src="/Images/logo.jpg" alt="">
+        </div> -->
+        <div class="footerbox">
+            <h2>PRODUCT</h2>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footerbox">
+            <h2>SUPPORT</h2>
+            <ul>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Trust & safety</a></li>
+                <li><a href="#">Help centre</a></li>
+            </ul>
+        </div>
+        <div class="footerbox">
+            <h2>DISCOVER</h2>
+            <ul>
+                <li><a href="#">Plus Works</a></li>
+                <li><a href="#">Academy</a></li>
+            </ul>
+        </div>
+        <div class="footerbox">
+            <h2>RESOURCES</h2>
+            <ul>
+                <li><a href="#">Customer Stories</a></li>
+                <li><a href="#">Business Post Calculator</a></li>
+                <li><a href="#">Startup Cities</a></li>
+            </ul>
+        </div>
+        <div class="footerbox">
+            <h2>BROWSE</h2>
+            <ul>
+                <li><a href="#">Freelance Services</a></li>
+                <li><a href="#">Freelance Services by Country</a></li>
+                <li><a href="#">Freelance Skills</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

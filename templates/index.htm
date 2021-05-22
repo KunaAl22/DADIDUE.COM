@@ -1,0 +1,131 @@
+{% extends "base.htm" %}
+
+{% block title %}INDEX{% endblock title %}
+
+{% block body %}
+<div class="jumbotron">
+  <h1 class="display-4">DADIDUE</h1>
+  <p class="lead">Hire the best freelancers for any job, online.</p>
+  <hr class="my-4">
+  <p>many people used dadidue.com to turn their ideas into reality.</p>
+  <a class="btn btn-primary btn-lg" href="{% url 'create_order' %}" role="button">HIRE A FREELANCER</a>
+</div>
+
+<div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://source.unsplash.com/1600x1000/?arts" alt="">
+
+            <div class="card-body">
+              <p class="card-text"> <br>CREATIVE DESIGN</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/creative">HIRE</a></button>
+                  
+                </div>
+                <small class="text-muted">Rs 250</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://source.unsplash.com/1600x1000/?books" alt="">
+            <div class="card-body">
+              <p class="card-text">ARTICLE WRITING</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/article">HIRE</a></button>
+                </div>
+                <small class="text-muted">Rs 200</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://source.unsplash.com/1600x1000/?graphics" alt="">
+            <div class="card-body">
+              <p class="card-text">GRAPHIC DESIGNING</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/graphic">HIRE</a></button>
+                </div>
+                <small class="text-muted">Rs 250</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://source.unsplash.com/1600x1000/?photographs" alt="">
+
+            <div class="card-body">
+              <p class="card-text">PHOTOGRAPH EDITING</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/photographer">HIRE</a></button>
+                </div>
+                <small class="text-muted">Rs 200</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://source.unsplash.com/1600x1000/?video" alt="">
+
+            <div class="card-body">
+              <p class="card-text">VIDEO EDITING</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/movie">HIRE</a></button>
+                </div>
+                <small class="text-muted">Rs 350</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://source.unsplash.com/1600x1000/?logo" alt="">
+
+            <div class="card-body">
+              <p class="card-text">LOGO DESIGNING</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/logo">HIRE</a></button>
+                </div>
+                <small class="text-muted">Rs 200</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://source.unsplash.com/1600x1000/?music" alt="">
+
+            <div class="card-body">
+              <p class="card-text">AUDIO AND MUSIC EDIT</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/audio">HIRE</a></button>
+                </div>
+                <small class="text-muted">Rs 250</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+    
+{% endblock body %}
+

@@ -1,0 +1,22 @@
+{% extends "base.htm" %}
+
+{% block title %}ARTICLE WRITING{% endblock title %}
+{% block body %}
+
+<div class="card" style="width: 100%%;">
+  <img src="https://source.unsplash.com/4000x1000/?books" class="card-img-top" alt="...">
+
+    
+  </div>
+</div>
+
+<div class="jumbotron">
+  <h1 class="display-4">HIRE AN ARTICLE WRITER</h1>
+  <p class="lead">Hire the best freelancers for any job, online.</p>
+  <hr class="my-4">
+  <p>many people used dadidue.com to turn their ideas into reality.</p>
+  <a href="{% url 'create_order' %}" class="btn btn-primary">HIRE</a>
+    <a href="{% url 'create_customer' %}" class="btn btn-primary">REGISTER USER</a>
+</div>
+
+{% endblock body %}
